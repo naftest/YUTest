@@ -1,0 +1,161 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Library 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Library4 ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/avraham/class_code/1300/Library4_HWK21/MylesTyberg/IntroToCompSci/homework/objects/Library4/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ Library4 ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 9 source files to /Users/avraham/class_code/1300/Library4_HWK21/MylesTyberg/IntroToCompSci/homework/objects/Library4/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Library4 ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/avraham/class_code/1300/Library4_HWK21/MylesTyberg/IntroToCompSci/homework/objects/Library4/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ Library4 ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 8 source files to /Users/avraham/class_code/1300/Library4_HWK21/MylesTyberg/IntroToCompSci/homework/objects/Library4/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ Library4 ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Test cases to execute : 6
+Running edu.yu.intro.objects.library4.test.TestBook
+Execution Started : testNotEqual
+Execution Finished : testNotEqual
+Execution Started : testEqualHashcodes
+Execution Finished : testEqualHashcodes
+Execution Started : testBadTitle
+Execution Finished : testBadTitle
+Execution Started : testBadBookType
+Execution Finished : testBadBookType
+Execution Started : testBadIsbn
+Execution Finished : testBadIsbn
+Execution Started : testBadAuthor
+Execution Finished : testBadAuthor
+Execution Started : testVanillaCtor
+Created Title:The Riddle-Master of Hed Author:Patricia A. McKillip ISBN:9780689305450 BookType:hardcover
+Execution Finished : testVanillaCtor
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in edu.yu.intro.objects.library4.test.TestBook
+Running edu.yu.intro.objects.library4.test.TestBookCollection
+Execution Started : addedBooksScenario
+Execution Finished : addedBooksScenario
+Execution Started : patronBorrowsThenReturns
+Execution Finished : patronBorrowsThenReturns
+Execution Started : patronMustBeEnrolledInLibraryToReserve
+Execution Finished : patronMustBeEnrolledInLibraryToReserve
+Execution Started : patronReserve
+Execution Finished : patronReserve
+Execution Started : testBookInstances
+Execution Finished : testBookInstances
+Execution Started : isInHoldingsWorks
+Execution Finished : isInHoldingsWorks
+Execution Started : newLibraryScenario
+Execution Finished : newLibraryScenario
+Execution Started : patronMustBeEnrolledInLibraryToBorrow
+Execution Finished : patronMustBeEnrolledInLibraryToBorrow
+Execution Started : bookInstanceMustBeInLibraryHoldings
+Execution Finished : bookInstanceMustBeInLibraryHoldings
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in edu.yu.intro.objects.library4.test.TestBookCollection
+Running edu.yu.intro.objects.library4.test.TestBookFilter
+Execution Started : testMatchFailsOnWrongISBN
+Execution Finished : testMatchFailsOnWrongISBN
+Execution Started : testMatchOnBookType
+Execution Finished : testMatchOnBookType
+Execution Started : defaultFilterMatchesEveryBook
+Execution Finished : defaultFilterMatchesEveryBook
+Execution Started : testMatchOnAuthorAndOnISBN
+Execution Finished : testMatchOnAuthorAndOnISBN
+Execution Started : testMatchOnAuthor
+Execution Finished : testMatchOnAuthor
+Execution Started : testMatchFailsOnWrongBookType
+Execution Finished : testMatchFailsOnWrongBookType
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.yu.intro.objects.library4.test.TestBookFilter
+Running edu.yu.intro.objects.library4.test.TestBookInstance
+Execution Started : borrowOnlyIfNotNullPatron
+Execution Finished : borrowOnlyIfNotNullPatron
+Execution Started : testPatronReservesBook
+Execution Finished : testPatronReservesBook
+Execution Started : testPatronBorrowsBook
+Execution Finished : testPatronBorrowsBook
+Execution Started : testNullBook
+Execution Finished : testNullBook
+Execution Started : differentInstancesAreNotEqualNorEqualHashcodes
+Execution Finished : differentInstancesAreNotEqualNorEqualHashcodes
+Execution Started : reserveOnlyIfNotNullPatron
+Execution Finished : reserveOnlyIfNotNullPatron
+Execution Started : testPatronReservesThenBorrowsBook
+Execution Finished : testPatronReservesThenBorrowsBook
+Execution Started : testPatronReturnsBook
+Execution Finished : testPatronReturnsBook
+Execution Started : testVanillaCtor
+Created Title:Patricia A. McKillip Author:The Riddle-Master of Hed ISBN:9780689305450 BookType:hardcover UUID: c98616d6-8206-44ef-8726-bbcf5b2d47b7 LoanState: AVAILABLE
+Execution Finished : testVanillaCtor
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in edu.yu.intro.objects.library4.test.TestBookInstance
+Running edu.yu.intro.objects.library4.test.TestLibrary
+Execution Started : testNotEqual
+Execution Finished : testNotEqual
+Execution Started : testNoBooksOnLoan
+Execution Finished : testNoBooksOnLoan
+Execution Started : testEqualHashcodes
+Execution Finished : testEqualHashcodes
+Execution Started : testBadPhoneNumber
+Execution Finished : testBadPhoneNumber
+Execution Started : patronMustBeMemberToQueryOnLoan
+Execution Finished : patronMustBeMemberToQueryOnLoan
+Execution Started : runDriver
+Execution Finished : runDriver
+Execution Started : testPatrons
+Execution Finished : testPatrons
+Execution Started : testBooksOnLoan
+Patron First_Name:Jane Last_Name:Ballisante Address:14 South Ct New York, NY 10010 UUID:85dd552c-9cc5-4923-a177-b994bf03251f is borrowing Title:The Hobbit Author:J. R. R. Tolkien ISBN:9780547928227 BookType:hardcover UUID: 78b101c9-1aaa-41ca-b062-02ed8e28b4be LoanState: AVAILABLE
+Patron First_Name:Jane Last_Name:Ballisante Address:14 South Ct New York, NY 10010 UUID:85dd552c-9cc5-4923-a177-b994bf03251f is borrowing Title:The Lord of the Rings: 50th Anniversary, One Vol. Edition Author:J. R. R. Tolkien ISBN:9780618645619 BookType:hardcover UUID: 20480b56-a06c-4a0d-89c0-ab18a4ba77c8 LoanState: AVAILABLE
+Execution Finished : testBooksOnLoan
+Execution Started : testBadName
+Execution Finished : testBadName
+Execution Started : testBookInstances
+Execution Finished : testBookInstances
+Execution Started : testBadAddress
+Execution Finished : testBadAddress
+Execution Started : testVanillaCtor
+Created Name:Finkelstein Memorial Library Central Library Address:24 W Rte 59, Spring Valley, NY 10977 Phone_Number:(845) 352-5700
+Execution Finished : testVanillaCtor
+Execution Started : patronCannotBorrowTwice
+Execution Finished : patronCannotBorrowTwice
+Execution Started : twoPatronsCannotBorrowSameInstance
+Execution Finished : twoPatronsCannotBorrowSameInstance
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in edu.yu.intro.objects.library4.test.TestLibrary
+Running edu.yu.intro.objects.library4.test.TestPatron
+Execution Started : testBadFirstName
+Execution Finished : testBadFirstName
+Execution Started : testNotEqual
+Execution Finished : testNotEqual
+Execution Started : testBadLastName
+Execution Finished : testBadLastName
+Execution Started : testBadAddress
+Execution Finished : testBadAddress
+Execution Started : testVanillaCtor
+Created First_Name:Jane Last_Name:Ballisante Address:14 South Ct New York, NY 10010 UUID:59812e41-185e-40ea-8c16-ed6e7f8359f5
+Execution Finished : testVanillaCtor
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.yu.intro.objects.library4.test.TestPatron
+Test cases executed : 50
+
+Results :
+
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.270 s
+[INFO] Finished at: 2018-01-01T09:11:03-05:00
+[INFO] Final Memory: 18M/303M
+[INFO] ------------------------------------------------------------------------
